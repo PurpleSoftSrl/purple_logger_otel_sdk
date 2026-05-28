@@ -1,8 +1,10 @@
 name: purple_logger_otel_sdk
-description: PurpleOTel SDK bridge for purple_logger — first-party OpenTelemetry backend.
+description: PurpleOTel SDK bridge for purple_logger — structured logs flow to OpenTelemetry with trace correlation.
 version: 0.1.0
-license: Apache-2.0
-publish_to: none
+repository: https://xamapps.visualstudio.com/AI/_git/purple_logger_otel_sdk
+homepage: https://pub.dev/packages/purple_logger_otel_sdk
+topics: [logging, opentelemetry, observability, tracing]
+license: AGPL-3.0
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
