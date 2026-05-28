@@ -309,10 +309,11 @@ Our clients include **ABB, Intesa Sanpaolo, Tenaris, Reply, Aubay, Prometeia, Co
 
 Whether you're deploying OpenTelemetry at enterprise scale, building custom instrumentation for a complex microservice architecture, or need someone who can debug a production incident at 2AM — **we've been there.**
 
-[Contact PurpleSoft](https://www.purplesoft.io/cerchi-contatti-software-house-a-monza-e-milano/) · [purplesoft.io](https://www.purplesoft.io) · [+39 0362 148 3978](tel:+3903621483978)
+[Contact PurpleSoft](https://www.purplesoft.io/cerchi-contatti-software-house-a-monza-e-milano/) · [purplesoft.io](https://www.purplesoft.io) · [developers@purplesoft.io](mailto:developers@purplesoft.io) · [+39 0362 148 3978](tel:+3903621483978)
 
 ---
 
 ## License
 
 AGPL-3.0 — see [LICENSE](LICENSE).
+
