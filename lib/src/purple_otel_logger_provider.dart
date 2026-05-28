@@ -39,7 +39,7 @@ final class _PurpleOtelLogger extends OtelLogger with OtelSeverityMapping, Logge
   void write(LogEvent event) {
     final allProps = <String, Object?>{};
     allProps.addAll(event.scopeProperties);
-    if (event.properties != null) allProps.addAll(event.properties);
+    allProps.addAll(event.properties);
     if (event.error != null) {
       allProps['error.type'] = event.error.runtimeType.toString();
       allProps['error.message'] = event.error.toString();

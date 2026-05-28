@@ -4,6 +4,7 @@ version: 0.1.0
 repository: https://xamapps.visualstudio.com/AI/_git/purple_logger_otel_sdk
 homepage: https://pub.dev/packages/purple_logger_otel_sdk
 topics: [logging, opentelemetry, observability, tracing]
+publish_to: none
 license: AGPL-3.0
 
 environment:
