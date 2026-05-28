@@ -1,0 +1,20 @@
+name: purple_logger_otel_sdk
+description: PurpleOTel SDK bridge for purple_logger — first-party OpenTelemetry backend.
+version: 0.1.0
+license: Apache-2.0
+publish_to: none
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  purple_logger:
+    path: ../purple_logger
+  purple_logger_otel:
+    path: ../purple_logger_otel
+  purple_otel_sdk:
+    path: ../purple_otel_sdk
+
+dev_dependencies:
+  test: ^1.25.0
+  lints: ^6.0.0
