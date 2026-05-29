@@ -1,4 +1,5 @@
-import 'package:purple_logger/purple_logger.dart' show EventLogger, LogEvent, LoggerConvenience;
+import 'package:purple_logger/purple_logger.dart'
+    show EventLogger, LogEvent, LoggerConvenience;
 import 'package:purple_logger_otel/purple_logger_otel.dart';
 import 'package:purple_otel_api/purple_otel_api.dart' as otel;
 
@@ -23,7 +24,9 @@ final class PurpleOtelLoggerProvider extends OtelLoggerProvider {
   }
 }
 
-final class _PurpleOtelLogger extends OtelLogger with OtelSeverityMapping, LoggerConvenience implements EventLogger {
+final class _PurpleOtelLogger extends OtelLogger
+    with OtelSeverityMapping, LoggerConvenience
+    implements EventLogger {
   final otel.LoggerProvider _otelProvider;
   otel.Logger? _otelLogger;
 
@@ -32,8 +35,7 @@ final class _PurpleOtelLogger extends OtelLogger with OtelSeverityMapping, Logge
     required otel.LoggerProvider otelProvider,
   }) : _otelProvider = otelProvider;
 
-  otel.Logger _getLogger() =>
-      _otelLogger ??= _otelProvider.get(category);
+  otel.Logger _getLogger() => _otelLogger ??= _otelProvider.get(category);
 
   @override
   void write(LogEvent event) {

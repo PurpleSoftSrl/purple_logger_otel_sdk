@@ -70,7 +70,7 @@
     },
     {
       "name": "purple_logger",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "dependencies": [
         "meta"
       ]
@@ -324,6 +324,16 @@
       ]
     },
     {
+      "name": "http",
+      "version": "1.6.0",
+      "dependencies": [
+        "async",
+        "http_parser",
+        "meta",
+        "web"
+      ]
+    },
+    {
       "name": "purple_otel_api",
       "version": "0.1.0",
       "dependencies": [
@@ -475,16 +485,6 @@
       "dependencies": [
         "meta",
         "path"
-      ]
-    },
-    {
-      "name": "http",
-      "version": "1.6.0",
-      "dependencies": [
-        "async",
-        "http_parser",
-        "meta",
-        "web"
       ]
     }
   ],

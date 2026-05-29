@@ -28,7 +28,8 @@ void main() {
         resource: otel.Resource.empty,
         processors: [SimpleLogRecordProcessor(exporter)],
       );
-      final bridgeProvider = PurpleOtelLoggerProvider(otelProvider: sdkProvider);
+      final bridgeProvider =
+          PurpleOtelLoggerProvider(otelProvider: sdkProvider);
       final factory = LoggingBuilder().addProvider(bridgeProvider).build();
       final logger = factory.createLogger('test');
 
@@ -44,7 +45,8 @@ void main() {
         resource: otel.Resource.empty,
         processors: [SimpleLogRecordProcessor(exporter)],
       );
-      final bridgeProvider = PurpleOtelLoggerProvider(otelProvider: sdkProvider);
+      final bridgeProvider =
+          PurpleOtelLoggerProvider(otelProvider: sdkProvider);
       final factory = LoggingBuilder().addProvider(bridgeProvider).build();
       final logger = factory.createLogger('test');
 
@@ -66,7 +68,8 @@ void main() {
         resource: otel.Resource.empty,
         processors: [SimpleLogRecordProcessor(exporter)],
       );
-      final bridgeProvider = PurpleOtelLoggerProvider(otelProvider: sdkProvider);
+      final bridgeProvider =
+          PurpleOtelLoggerProvider(otelProvider: sdkProvider);
       final factory = LoggingBuilder().addProvider(bridgeProvider).build();
       final logger = factory.createLogger('test');
 
@@ -76,8 +79,10 @@ void main() {
       });
 
       final record = exporter.exported.first;
-      expect(record.attributes.get('user.id'), otel.AttributeValue.string('123'));
-      expect(record.attributes.get('request.method'), otel.AttributeValue.string('GET'));
+      expect(
+          record.attributes.get('user.id'), otel.AttributeValue.string('123'));
+      expect(record.attributes.get('request.method'),
+          otel.AttributeValue.string('GET'));
     });
 
     test('provider caching works', () {
@@ -86,7 +91,8 @@ void main() {
         resource: otel.Resource.empty,
         processors: [SimpleLogRecordProcessor(exporter)],
       );
-      final bridgeProvider = PurpleOtelLoggerProvider(otelProvider: sdkProvider);
+      final bridgeProvider =
+          PurpleOtelLoggerProvider(otelProvider: sdkProvider);
       final factory = LoggingBuilder().addProvider(bridgeProvider).build();
       final logger1 = factory.createLogger('cached');
       final logger2 = factory.createLogger('cached');
@@ -100,7 +106,8 @@ void main() {
         resource: otel.Resource.empty,
         processors: [SimpleLogRecordProcessor(exporter)],
       );
-      final bridgeProvider = PurpleOtelLoggerProvider(otelProvider: sdkProvider);
+      final bridgeProvider =
+          PurpleOtelLoggerProvider(otelProvider: sdkProvider);
       bridgeProvider.dispose();
       // Just verify no crash — dispose triggers SDK shutdown
     });

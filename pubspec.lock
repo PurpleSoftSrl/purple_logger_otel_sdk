@@ -223,7 +223,7 @@ packages:
       path: "../purple_logger"
       relative: true
     source: path
-    version: "2.0.0"
+    version: "2.1.0"
   purple_logger_otel:
     dependency: "direct main"
     description:
