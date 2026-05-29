@@ -1,6 +1,6 @@
 name: purple_logger_otel_sdk
 description: PurpleOTel SDK bridge for purple_logger — structured logs flow to OpenTelemetry with trace correlation.
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/purplesoftsrl/purple_logger_otel_sdk
 homepage: https://github.com/purplesoftsrl/purple_logger_otel_sdk
 topics: [logging, opentelemetry, observability]
