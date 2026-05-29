@@ -9,6 +9,7 @@
       "dependencies": [
         "purple_logger",
         "purple_logger_otel",
+        "purple_otel_api",
         "purple_otel_sdk"
       ],
       "devDependencies": [
@@ -71,6 +72,13 @@
     {
       "name": "purple_logger",
       "version": "2.1.0",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
+      "name": "purple_otel_api",
+      "version": "0.1.0",
       "dependencies": [
         "meta"
       ]
@@ -331,13 +339,6 @@
         "http_parser",
         "meta",
         "web"
-      ]
-    },
-    {
-      "name": "purple_otel_api",
-      "version": "0.1.0",
-      "dependencies": [
-        "meta"
       ]
     },
     {

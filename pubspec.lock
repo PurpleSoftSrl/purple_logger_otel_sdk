@@ -220,30 +220,34 @@ packages:
   purple_logger:
     dependency: "direct main"
     description:
-      path: "../purple_logger"
-      relative: true
-    source: path
+      name: purple_logger
+      sha256: "7f170dcaec08f108c4d1492aa71baf238eef52fe40812a46a8eaffe2d4dea555"
+      url: "https://pub.dev"
+    source: hosted
     version: "2.1.0"
   purple_logger_otel:
     dependency: "direct main"
     description:
-      path: "../purple_logger_otel"
-      relative: true
-    source: path
+      name: purple_logger_otel
+      sha256: "5fb891d63173abe7a0ea5a25c35138407d385946a69fbf6a7b1a71161c046966"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   purple_otel_api:
-    dependency: transitive
+    dependency: "direct main"
     description:
-      path: "../purple_otel_api"
-      relative: true
-    source: path
+      name: purple_otel_api
+      sha256: "39fed98d1d1ad04c6efd558e62465e7d2abb8ea0f387b45cfba7afa22a43664c"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.1.0"
   purple_otel_sdk:
     dependency: "direct main"
     description:
-      path: "../purple_otel_sdk"
-      relative: true
-    source: path
+      name: purple_otel_sdk
+      sha256: de27a2fed3beb491a9272ce205dac63dc30c44253123cbf1012ef49a8252cfd4
+      url: "https://pub.dev"
+    source: hosted
     version: "0.1.0"
   shelf:
     dependency: transitive
